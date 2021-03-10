@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Use_of_useBean&apos; to &apos;jsp_useBean&apos;" description="Rename resource &apos;Use_of_useBean&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Use_of_useBean" name="jsp_useBean" stamp="1568722001320" updateReferences="true"/>
+</session>

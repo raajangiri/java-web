@@ -1,0 +1,51 @@
+package pkg2;
+
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Connection;
+
+public class Database {
+
+	public boolean connectDatabase()
+	{
+	try { 
+		//load Driver Class 
+		Class.forName("com.mysql.jdbc.Driver");
+		// connect
+		Connection conn =DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","");
+				
+		
+		//close
+		conn.close();
+		
+		return(true);
+	}catch(ClassNotFoundException | SQLException ex)
+	 {
+		//System.out.println("Error :"+ex);
+		
+		return (false);
+	}
+}
+	
+	public boolean insertRecord(Person p)
+	{
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","");
+			String sql="insert into person1 (id,full_name,contact) values (?,?,?)";
+			PreparedStatement pstat=conn.prepareStatement(sql);
+			pstat.setInt(1,p.getId());
+			pstat.setString(2,p.getFull_name());
+			pstat.setString(3,p.getContact());
+			pstat.executeUpdate();
+			pstat.close();
+			conn.close();
+			return(true);
+			
+		}catch (Exception ex) {
+			return false;
+		}
+	}
+}

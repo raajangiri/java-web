@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;pkg8.Cookie1.java&apos; to &apos;Servlet1.java&apos;&#x0D;&#x0A;- Original project: &apos;Project8&apos;&#x0D;&#x0A;- Original element: &apos;pkg8.Cookie1.java&apos;&#x0D;&#x0A;- Renamed element: &apos;pkg8.Servlet1.java&apos;" description="Rename compilation unit &apos;Cookie1.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;pkg8{Cookie1.java" name="Servlet1.java" references="false" stamp="1566904773930" version="1.0"/>
+</session>
